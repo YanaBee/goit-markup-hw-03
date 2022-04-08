@@ -56,14 +56,6 @@ body {
 
 /* Logo */
 
-.logo {
-    width: 145px;
-    display: flex;
-    margin-left: 215px;
-    margin-top: 24px;
-    margin-bottom: 25px;
-}
-
 .logo-accent {
     font-family: var(--logo-font);
     color: var(--logo-accent);
@@ -124,6 +116,16 @@ p {
     margin: 0;
 }
 /* Hero */
+.hero {
+    width: 1600px;
+    background: #2F303A;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .title {
     font-family: var(--title-font);
     color: var(--text-accent);
@@ -131,9 +133,10 @@ p {
     font-weight: 900;
     letter-spacing: 0.06em;
     line-height: 1.4;
-    text-align: center;
     text-transform: uppercase;
-    background-color: var(--background-color-grey)
+
+    padding-top: 200px;
+    padding-bottom: 30px;
 }
 
 
@@ -144,22 +147,45 @@ p {
     line-height: 1.9;
     background: var(--logo-accent);
     border-radius: 4px;
+    border-color: var(--logo-accent);
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    width: 200px;
+    height: 50px;
+
+    margin-bottom: 200px;
 }
 
 /* Advantages */
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-list .item {
+    width: 270px;
+    margin-right: 30px;
+}
+
+.features-list .item:nth-child(4n) {
+    margin-right: 0;
+}
+
 
 .invisible-title {
     visibility: hidden;
 }
 
 .section-title {
-    font-size: 36px;
+    font-family: var(--main-font);
+    font-style: normal;
     font-weight: 700;
-    line-height: 1.17;
-    text-align: center; 
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em; 
 }
 
 .main-text {
@@ -168,23 +194,23 @@ p {
 }
 
 .list-title {
-    font-family: inherit;
-    color: var(--text-color);
-    font-size: 14px;
     font-weight: 700;
-    line-height: 1.14;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 /* Our team */
 
 .name-title {
-    font-family: inherit;
-    color: var(--text-color);
-    font-size: 16px;
     font-weight: 500;
-    line-height: 1.19; 
+    font-size: 16px;
+    line-height: 19px;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .position-title {
@@ -229,6 +255,7 @@ p {
 a { 
     text-decoration: none;
     font-style: normal;
+    color: inherit;
 }
 
 
@@ -251,12 +278,12 @@ a {
 }
 
 .projects {
+    font-family: var(--main-font);
     color: var(--text-color);
-    font-size: 18px;
     font-weight: 700;
-    line-height: 2;
+    font-size: 18px;
+    line-height: 36px;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
 }
 
 .project-type {
