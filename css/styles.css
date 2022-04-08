@@ -18,15 +18,53 @@ body {
     background-color: var(--background-color-grey);
     color: var(--text-color);
 }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+.menu-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.menu-list .item:not(:last-child) {
+    margin-right: 50px;
+    display: flex;
+}
+
+.contact-list {
+    display: flex;
+    margin-left: 331px;
+}
+
+.contact-list .item + .item {
+    margin-left: 50px;
+
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+}
 
 /* Logo */
 
+.logo {
+    width: 145px;
+    display: flex;
+    margin-left: 215px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
 .logo-accent {
     font-family: var(--logo-font);
     color: var(--logo-accent);
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
+
 }
 
 .logo-dark {
@@ -39,6 +77,10 @@ body {
 
 /* Menu */
 .menu-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 57px;
+
     font-family: var(--main-font);
     color: var(--text-color);
     font-weight: 500;
