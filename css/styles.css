@@ -119,8 +119,8 @@ p {
 .hero {
     width: 1600px;
     background: #2F303A;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding-left: 0;
     padding-right: 0;
@@ -155,6 +155,8 @@ p {
     height: 50px;
 
     margin-bottom: 200px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Advantages */
