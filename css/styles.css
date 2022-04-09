@@ -8,7 +8,7 @@
     --contact-color: #757575;
     --background-color-dark: #2F303A;
     --background-color-white: #ffffff;
-    --background-color-grey: #E5E5E5;
+
 }
 
 body {
@@ -125,7 +125,7 @@ p {
 
 .container-hero {
     max-width: 1600px;
-    background: #2F303A;
+    background: var(--background-color-dark);
     margin-left: 0;
     margin-right: 0;
     text-align: center;
@@ -283,7 +283,7 @@ p {
     width: 270px;
     height: 368px;
     margin-bottom: 94px;
-    background-color: #FFFFFF;
+    background-color: var(--background-color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
