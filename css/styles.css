@@ -16,6 +16,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    margin: 0;
 }
 .container {
     margin-left: auto;
@@ -52,6 +53,10 @@ body {
 .page-header {
     display: flex;
     align-items: center;
+}
+
+.header-section {
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* Logo */
@@ -116,11 +121,12 @@ p {
     margin: 0;
 }
 /* Hero */
-.hero {
-    width: 1600px;
+
+.container-hero {
+    max-width: 1600px;
     background: #2F303A;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
     padding-left: 0;
     padding-right: 0;
@@ -188,11 +194,17 @@ p {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em; 
+    margin-bottom: 50px;
+    padding-top: 94px;
 }
 
 .main-text {
+    font-family: 'Roboto';
     color: var(--contact-color);
     line-height: 1.7;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .list-title {
@@ -202,7 +214,23 @@ p {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 70px;
     margin-bottom: 10px;
+}
+
+ .photo-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+.item-photo {
+    padding-right: 30px;
+}
+
+.item-photo:nth-child(3n) {
+    padding-right: 0;
 }
 
 /* Our team */
@@ -213,6 +241,8 @@ p {
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .position-title {
@@ -221,10 +251,55 @@ p {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+    margin-bottom: 30px;
 }
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-team {
+    max-width: 1600px;
+    background-color: #F5F4FA;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.list {
+    padding-right: 30px;
+}
+
+.list:nth-child(4) {
+    padding-right: 0;
+}
+
+.container-list {
+    width: 270px;
+    height: 368px;
+    margin-bottom: 94px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.logo-web {
+    width: 1600px;
+    padding-left: 0;
+}
+
 
 /* Footer */
 
+.footer-color {
+    background-color: #2F303A;
+    width: 1600px;
+}
 .logo-white {
     font-family: var(--logo-font);
     color: var(--text-accent);
@@ -233,22 +308,37 @@ p {
     line-height: 1.2; 
 }
 
-.adress {
+.address {
     font-family: var(--main-font);
     color: var(--text-accent);
     line-height: 1.7;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding-bottom: 9px;
+    padding-left: 200px;
+
 }
 
-.adress:hover,
-.adress:focus {
+.address:hover,
+.address:focus {
     color: var(--logo-accent);
 }
 
 .contact-info {
     font-family: var(--main-font);
-    color: rgba(255, 255, 255, 0.6);   
+    color: rgba(255, 255, 255, 0.6);  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em; 
+    padding-bottom: 9px;
+    padding-left: 200px;
 }
 
+.address-info {
+    padding-bottom: 60px;
+}
 .contact-info:hover,
 .contact-info:focus {
     color: var(--logo-accent);
@@ -260,10 +350,18 @@ a {
     color: inherit;
 }
 
+.container-footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
 
 /* NEW PAGE - Portfolio */
 
 .nav-button {
+    font-family: var(--main-font);
     color: var(--text-color);
     font-weight: 500;
     font-size: 16px;
@@ -271,6 +369,10 @@ a {
     background: #F5F4FA;
     border-radius: 4px;
     cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
+    padding: 6px 23px;
+    margin-bottom: 50px;
 }
 
 .nav-button:hover,
@@ -286,6 +388,10 @@ a {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+
 }
 
 .project-type {
@@ -293,4 +399,44 @@ a {
     font-size: 16px;
     line-height: 1.9; 
     color: var(--contact-color);
+    padding-left: 24px;
+    padding-bottom: 20px;
+    
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+}
+
+.button-list .item {
+    padding-left: 8px;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    align-content: center;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-bottom: 94px;
+}
+
+.work-list .item {
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+}
+
+.work-list .item:nth-child(3n) {
+    padding-right: 0;
+}
+
+.container-works {
+    width: 370px;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
