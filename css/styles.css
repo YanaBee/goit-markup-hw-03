@@ -19,8 +19,9 @@ body {
     margin: 0;
 }
 .container {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
     width: 1200px;
     padding: 0 15px;
 }
@@ -296,10 +297,6 @@ p {
 
 /* Footer */
 
-.footer-color {
-    background-color: #2F303A;
-    width: 1600px;
-}
 .logo-white {
     font-family: var(--logo-font);
     color: var(--text-accent);
@@ -316,7 +313,7 @@ p {
     font-size: 14px;
     letter-spacing: 0.03em;
     padding-bottom: 9px;
-    padding-left: 200px;
+    padding-left: auto;
 
 }
 
@@ -333,11 +330,26 @@ p {
     line-height: 1.5;
     letter-spacing: 0.03em; 
     padding-bottom: 9px;
-    padding-left: 200px;
+    padding-left: auto;
 }
 
-.address-info {
+.address-info .item {
+    padding-bottom: 9px;
+    padding-left: auto;
+}
+
+.adress-info {
+    justify-content: flex-start;
+}
+
+
+.container-address {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding: 0 15px;
     padding-bottom: 60px;
+    justify-content: flex-start;
 }
 .contact-info:hover,
 .contact-info:focus {
@@ -351,12 +363,30 @@ a {
 }
 
 .container-footer {
-    padding-top: 60px;
-    padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
+    padding: 0 15px;
+    padding-bottom: 20px;
 }
+
+
+.footer-contacts {
+    background-color: #2F303A;
+    padding-top: 60px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-adress {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding: 0 15px;
+    align-items: flex-start;
+}
+
 
 /* NEW PAGE - Portfolio */
 
