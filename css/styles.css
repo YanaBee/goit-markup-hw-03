@@ -31,6 +31,10 @@ body {
     margin-left: 93px;
 }
 
+.menu-link.current {
+    color: var(--logo-accent);
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -131,6 +135,9 @@ p {
     text-align: center;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 }
 
 .title {
@@ -142,7 +149,6 @@ p {
     line-height: 1.4;
     text-transform: uppercase;
 
-    padding-top: 200px;
     padding-bottom: 30px;
 }
 
@@ -158,12 +164,10 @@ p {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    width: 200px;
+    min-width: 200px;
     height: 50px;
 
-    margin-bottom: 200px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 10px 32px;
 }
 
 /* Advantages */
@@ -374,17 +378,17 @@ a {
 .footer-contacts {
     background-color: #2F303A;
     padding-top: 60px;
+    padding-bottom: 60px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.container-adress {
+.container-address {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     padding: 0 15px;
-    align-items: flex-start;
 }
 
 
