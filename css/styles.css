@@ -187,8 +187,16 @@ p {
 }
 
 
-.invisible-title {
-    visibility: hidden;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;    
+    clip: rect(0 0 0 0);
+
 }
 
 .section-title {
@@ -392,7 +400,7 @@ a {
 }
 
 
-/* NEW PAGE - Portfolio */
+/* PAGE - Portfolio */
 
 .nav-button {
     font-family: var(--main-font);
