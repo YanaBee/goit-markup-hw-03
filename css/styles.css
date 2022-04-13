@@ -378,7 +378,7 @@ a {
   color: inherit;
 }
 
-.item {
+.item-footer {
   margin-bottom: 9px;
 }
 
@@ -443,8 +443,7 @@ a {
 .work-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 0;
+  flex-basis: auto;
 }
 
 .work-list .item {
@@ -454,4 +453,9 @@ a {
 
 .work-list .item:nth-child(3n) {
   margin-right: 0;
+}
+
+.work-list:nth-last-child(-n + 3) {
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
